@@ -1,3 +1,15 @@
+/******************************************************************************
+ * Course: CSC XXX – Data Structures
+ * Semester: Spring 2026
+ * Assignment: 1 – Stacks and Queues (Linked List Implementation)
+ *
+ * Description:
+ * This header file defines the node structure and the Stack and Queue
+ * classes using a singly linked list implementation.
+ *
+ * Author: Cameron Buck
+ ******************************************************************************/
+
 #ifndef SQLL_H
 #define SQLL_H
 
@@ -9,6 +21,11 @@
 
 using namespace std;
 
+/**
+ * node
+ * ---------------------------------------------------------
+ * A singly linked list node used for both Stack and Queue.
+ */
 struct node
 {
     string data;
@@ -21,6 +38,11 @@ struct node
     }
 };
 
+/**
+ * Stack (LIFO)
+ * ---------------------------------------------------------
+ * Linked-list implementation of a stack.
+ */
 class Stack
 {
 private:
@@ -37,6 +59,11 @@ public:
     void display();
 };
 
+/**
+ * Queue (FIFO)
+ * ---------------------------------------------------------
+ * Linked-list implementation of a queue.
+ */
 class Queue
 {
 private:
@@ -53,7 +80,11 @@ public:
     void display();
 };
 
-void josephus(int n, int k);
+/* Task 3 */
 double evaluateExpression(string& expr);
 
+/* Task 4 */
+void josephus(int n, int k);
+
 #endif
+
